@@ -14,19 +14,8 @@
     <h2 id="song-title">Perfect - our version</h2>
     <p id="artist-name">pri's bitch</p>
   </div>
-  <div id="controls">
-    <button onclick="rewind()">⏪</button>
-    <button onclick="togglePlayPause()">▶️</button>
-    <button onclick="skip()">⏩</button>
-  </div>
-  <div id="seek-container">
-    <input type="range" id="seekSlider" min="0" step="1" value="0" oninput="seek()">
-    <div id="time-display">
-      <span id="elapsed-time">0:00</span> / <span id="remaining-time">0:00</span>
-    </div>
-  </div>
 
-  <audio id="audioPlayer" src="images/Recording.m4a" onloadedmetadata="initializeSeekSlider()" controls autoplay></audio>
+  <audio id="audioPlayer" src="images/Recording.m4a" onloadedmetadata="initializeSeekSlider()" autoplay controls></audio>
   <script src="script.js"></script>
 </div>
 
